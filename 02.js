@@ -17,6 +17,7 @@ console.log(generateHash("my name is abhishek chatterjee"));
 // o/p = "#MyNameIsAbhishekChatterjee"
 
 function generateHash(val){
+  if(val.length >280 && val.trim().length === 0) return false;
  let str = val.split(" ");
  console.log(str);
  str = str.map((ele)=> (ele.replace(ele[0], ele[0].toUpperCase())))
