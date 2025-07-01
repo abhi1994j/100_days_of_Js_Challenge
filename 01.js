@@ -14,7 +14,7 @@
 // If the input string is empty or contains only whitespace, the function should return an false.
 // The function should ignore leading and trailing whitespace when determining the longest word.
 
-console.log(findLongestWord("Watch Thapa Technical javascript course on youtube"));
+console.log(findLongestWord("Watch javascript course on youtube"));
 
 function findLongestWord(str) {
 
