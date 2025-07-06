@@ -18,5 +18,5 @@ function sumOfDigits(number){
     number = Math.floor(number/10);
     // console.log(number)
   }
-  return temp
+  return temp;
 }
