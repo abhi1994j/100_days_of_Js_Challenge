@@ -7,10 +7,16 @@ console.log(sumOfSquares([1, 2, 3])); // Output: 14
 console.log(sumOfSquares([1, 2, 7])); // Output: 54
 console.log(sumOfSquares([1, 2, 9])); // Output: 86
 
+// method 1
+// function sumOfSquares(arr){
+//   let count = 0;
+//   for(let ele of arr) {
+//     count += ele*ele
+//   }
+//   return count;
+// }
+//method 2
+
 function sumOfSquares(arr){
-  let count = 0;
-  for(let ele of arr) {
-    count += ele*ele
-  }
-  return count;
+  return arr.reduce((acc, curr)=> acc+= curr*curr , 0)
 }
